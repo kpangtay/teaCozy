@@ -4,38 +4,11 @@ body{
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  margin: 0;
   text-align: center;
 }
 
-nav{
-  text-align: right;
-}
-
-nav span{
-  display: inline-block;
-  padding: 20px 10px;
-}
-
-nav a{
-  	color: seashell;
-  	text-decoration: underline;
-}
-
-#logo{
-  display: flex;
-  flex-grow: 1;
-}
-
-#mission{
-  display: flex;
-  background-image: url("resources/img/img-mission-background.jpg");
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  height: 700px;
-  width: 1200px;
-}
-
+/*Header Section*/
 header{
   display: flex;
   align-items: center;
@@ -44,14 +17,120 @@ header{
   position: fixed;
   height: 69px;
   width: 100%;
+  opacity:0.9;
 }
 
-header img{
+.logo img{
   height: 50px;
+  width:auto;
+  max-width: 100%;
   padding-left: 10px;
 }
 
-h2,h4{
-  	padding: 10px;
-  	margin: 0px;
-  }
+nav{
+  text-align: right;
+	flex-grow: 1;
+}
+
+nav span{
+  display: inline-block;
+  padding-right: 30px;
+  text-decoration: underline;
+}
+
+nav a{
+  	color: seashell;
+}
+
+.main{
+    padding-top: 69px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#mission{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  align-items: center;
+  height: 700px;
+  width: 1200px;
+}
+
+.missiontext{
+  width: 1200px;
+  margin: auto;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    opacity: 1;
+}
+
+/*Tea of the Month*/
+#featured{
+  display: flex;
+  width: 1000px;
+  margin: 70px auto;
+}
+
+.featuredtea{
+    padding: 5px;
+}
+
+.featuredtea img{
+  height: 200px;
+  width: 300px;
+}
+
+.featuredtea span{
+  display: block;
+  padding-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Locations*/
+#locations {
+    height: 500px;
+    background-image:: url("resources/img/img-locations-background.jpg");
+    padding-top: 70px;
+    width: auto;
+}
+
+.locations {
+    padding-top: 5px;
+}
+
+.addresses {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 280px;
+	padding: 10px;
+	margin: 5px 20px;
+	background-color: black;
+  width: 300px;
+  opacity: 1.0;
+}
+
+/*Footer Section*/
+.footer{
+  padding-top: 20px;
+  height: 200px;
+}
+
+.copyright {
+    text-align: left;
+    padding-left: 20px;
+}
